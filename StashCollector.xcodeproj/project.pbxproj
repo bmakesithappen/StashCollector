@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE5E5AC41FA5099600AD91BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AC31FA5099600AD91BF /* AppDelegate.swift */; };
+		DE5E5AC61FA5099600AD91BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AC51FA5099600AD91BF /* ViewController.swift */; };
+		DE5E5AC91FA5099600AD91BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5E5AC71FA5099600AD91BF /* Main.storyboard */; };
+		DE5E5ACC1FA5099600AD91BF /* StashCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5ACA1FA5099600AD91BF /* StashCollector.xcdatamodeld */; };
+		DE5E5ACE1FA5099600AD91BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5E5ACD1FA5099600AD91BF /* Assets.xcassets */; };
+		DE5E5AD11FA5099600AD91BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5E5ACF1FA5099600AD91BF /* LaunchScreen.storyboard */; };
+		DE5E5ADC1FA5099600AD91BF /* StashCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5ADB1FA5099600AD91BF /* StashCollectorTests.swift */; };
+		DE5E5AE71FA5099600AD91BF /* StashCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AE61FA5099600AD91BF /* StashCollectorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE5E5AD81FA5099600AD91BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE5E5AB81FA5099600AD91BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5E5ABF1FA5099600AD91BF;
+			remoteInfo = StashCollector;
+		};
+		DE5E5AE31FA5099600AD91BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE5E5AB81FA5099600AD91BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5E5ABF1FA5099600AD91BF;
+			remoteInfo = StashCollector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE5E5AC01FA5099600AD91BF /* StashCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5E5AC31FA5099600AD91BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE5E5AC51FA5099600AD91BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE5E5AC81FA5099600AD91BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE5E5ACB1FA5099600AD91BF /* StashCollector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StashCollector.xcdatamodel; sourceTree = "<group>"; };
+		DE5E5ACD1FA5099600AD91BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE5E5AD01FA5099600AD91BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE5E5AD21FA5099600AD91BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5E5AD71FA5099600AD91BF /* StashCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCollectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5E5ADB1FA5099600AD91BF /* StashCollectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCollectorTests.swift; sourceTree = "<group>"; };
+		DE5E5ADD1FA5099600AD91BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5E5AE21FA5099600AD91BF /* StashCollectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCollectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5E5AE61FA5099600AD91BF /* StashCollectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCollectorUITests.swift; sourceTree = "<group>"; };
+		DE5E5AE81FA5099600AD91BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE5E5ABD1FA5099600AD91BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5E5AD41FA5099600AD91BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5E5ADF1FA5099600AD91BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE5E5AB71FA5099600AD91BF = {
+			isa = PBXGroup;
+			children = (
+				DE5E5AC21FA5099600AD91BF /* StashCollector */,
+				DE5E5ADA1FA5099600AD91BF /* StashCollectorTests */,
+				DE5E5AE51FA5099600AD91BF /* StashCollectorUITests */,
+				DE5E5AC11FA5099600AD91BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE5E5AC11FA5099600AD91BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E5AC01FA5099600AD91BF /* StashCollector.app */,
+				DE5E5AD71FA5099600AD91BF /* StashCollectorTests.xctest */,
+				DE5E5AE21FA5099600AD91BF /* StashCollectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE5E5AC21FA5099600AD91BF /* StashCollector */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E5AC31FA5099600AD91BF /* AppDelegate.swift */,
+				DE5E5AC51FA5099600AD91BF /* ViewController.swift */,
+				DE5E5AC71FA5099600AD91BF /* Main.storyboard */,
+				DE5E5ACD1FA5099600AD91BF /* Assets.xcassets */,
+				DE5E5ACF1FA5099600AD91BF /* LaunchScreen.storyboard */,
+				DE5E5AD21FA5099600AD91BF /* Info.plist */,
+				DE5E5ACA1FA5099600AD91BF /* StashCollector.xcdatamodeld */,
+			);
+			path = StashCollector;
+			sourceTree = "<group>";
+		};
+		DE5E5ADA1FA5099600AD91BF /* StashCollectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E5ADB1FA5099600AD91BF /* StashCollectorTests.swift */,
+				DE5E5ADD1FA5099600AD91BF /* Info.plist */,
+			);
+			path = StashCollectorTests;
+			sourceTree = "<group>";
+		};
+		DE5E5AE51FA5099600AD91BF /* StashCollectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E5AE61FA5099600AD91BF /* StashCollectorUITests.swift */,
+				DE5E5AE81FA5099600AD91BF /* Info.plist */,
+			);
+			path = StashCollectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE5E5ABF1FA5099600AD91BF /* StashCollector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5E5AEB1FA5099600AD91BF /* Build configuration list for PBXNativeTarget "StashCollector" */;
+			buildPhases = (
+				DE5E5ABC1FA5099600AD91BF /* Sources */,
+				DE5E5ABD1FA5099600AD91BF /* Frameworks */,
+				DE5E5ABE1FA5099600AD91BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StashCollector;
+			productName = StashCollector;
+			productReference = DE5E5AC01FA5099600AD91BF /* StashCollector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE5E5AD61FA5099600AD91BF /* StashCollectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5E5AEE1FA5099600AD91BF /* Build configuration list for PBXNativeTarget "StashCollectorTests" */;
+			buildPhases = (
+				DE5E5AD31FA5099600AD91BF /* Sources */,
+				DE5E5AD41FA5099600AD91BF /* Frameworks */,
+				DE5E5AD51FA5099600AD91BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5E5AD91FA5099600AD91BF /* PBXTargetDependency */,
+			);
+			name = StashCollectorTests;
+			productName = StashCollectorTests;
+			productReference = DE5E5AD71FA5099600AD91BF /* StashCollectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE5E5AE11FA5099600AD91BF /* StashCollectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5E5AF11FA5099600AD91BF /* Build configuration list for PBXNativeTarget "StashCollectorUITests" */;
+			buildPhases = (
+				DE5E5ADE1FA5099600AD91BF /* Sources */,
+				DE5E5ADF1FA5099600AD91BF /* Frameworks */,
+				DE5E5AE01FA5099600AD91BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5E5AE41FA5099600AD91BF /* PBXTargetDependency */,
+			);
+			name = StashCollectorUITests;
+			productName = StashCollectorUITests;
+			productReference = DE5E5AE21FA5099600AD91BF /* StashCollectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE5E5AB81FA5099600AD91BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Bernard Désert";
+				TargetAttributes = {
+					DE5E5ABF1FA5099600AD91BF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					DE5E5AD61FA5099600AD91BF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DE5E5ABF1FA5099600AD91BF;
+					};
+					DE5E5AE11FA5099600AD91BF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DE5E5ABF1FA5099600AD91BF;
+					};
+				};
+			};
+			buildConfigurationList = DE5E5ABB1FA5099600AD91BF /* Build configuration list for PBXProject "StashCollector" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE5E5AB71FA5099600AD91BF;
+			productRefGroup = DE5E5AC11FA5099600AD91BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE5E5ABF1FA5099600AD91BF /* StashCollector */,
+				DE5E5AD61FA5099600AD91BF /* StashCollectorTests */,
+				DE5E5AE11FA5099600AD91BF /* StashCollectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE5E5ABE1FA5099600AD91BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5E5AD11FA5099600AD91BF /* LaunchScreen.storyboard in Resources */,
+				DE5E5ACE1FA5099600AD91BF /* Assets.xcassets in Resources */,
+				DE5E5AC91FA5099600AD91BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5E5AD51FA5099600AD91BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5E5AE01FA5099600AD91BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE5E5ABC1FA5099600AD91BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5E5ACC1FA5099600AD91BF /* StashCollector.xcdatamodeld in Sources */,
+				DE5E5AC61FA5099600AD91BF /* ViewController.swift in Sources */,
+				DE5E5AC41FA5099600AD91BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5E5AD31FA5099600AD91BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5E5ADC1FA5099600AD91BF /* StashCollectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5E5ADE1FA5099600AD91BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5E5AE71FA5099600AD91BF /* StashCollectorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE5E5AD91FA5099600AD91BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5E5ABF1FA5099600AD91BF /* StashCollector */;
+			targetProxy = DE5E5AD81FA5099600AD91BF /* PBXContainerItemProxy */;
+		};
+		DE5E5AE41FA5099600AD91BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5E5ABF1FA5099600AD91BF /* StashCollector */;
+			targetProxy = DE5E5AE31FA5099600AD91BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE5E5AC71FA5099600AD91BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5E5AC81FA5099600AD91BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5E5ACF1FA5099600AD91BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5E5AD01FA5099600AD91BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE5E5AE91FA5099600AD91BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE5E5AEA1FA5099600AD91BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE5E5AEC1FA5099600AD91BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCollector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernard.StashCollector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE5E5AED1FA5099600AD91BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCollector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernard.StashCollector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE5E5AEF1FA5099600AD91BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCollectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernard.StashCollectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashCollector.app/StashCollector";
+			};
+			name = Debug;
+		};
+		DE5E5AF01FA5099600AD91BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCollectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernard.StashCollectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashCollector.app/StashCollector";
+			};
+			name = Release;
+		};
+		DE5E5AF21FA5099600AD91BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCollectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernard.StashCollectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StashCollector;
+			};
+			name = Debug;
+		};
+		DE5E5AF31FA5099600AD91BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCollectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernard.StashCollectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StashCollector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE5E5ABB1FA5099600AD91BF /* Build configuration list for PBXProject "StashCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5E5AE91FA5099600AD91BF /* Debug */,
+				DE5E5AEA1FA5099600AD91BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5E5AEB1FA5099600AD91BF /* Build configuration list for PBXNativeTarget "StashCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5E5AEC1FA5099600AD91BF /* Debug */,
+				DE5E5AED1FA5099600AD91BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5E5AEE1FA5099600AD91BF /* Build configuration list for PBXNativeTarget "StashCollectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5E5AEF1FA5099600AD91BF /* Debug */,
+				DE5E5AF01FA5099600AD91BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5E5AF11FA5099600AD91BF /* Build configuration list for PBXNativeTarget "StashCollectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5E5AF21FA5099600AD91BF /* Debug */,
+				DE5E5AF31FA5099600AD91BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE5E5ACA1FA5099600AD91BF /* StashCollector.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE5E5ACB1FA5099600AD91BF /* StashCollector.xcdatamodel */,
+			);
+			currentVersion = DE5E5ACB1FA5099600AD91BF /* StashCollector.xcdatamodel */;
+			path = StashCollector.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DE5E5AB81FA5099600AD91BF /* Project object */;
+}
