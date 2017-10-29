@@ -19,6 +19,7 @@
 		DE5E5AFB1FA6471200AD91BF /* StashListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFA1FA6471200AD91BF /* StashListViewController.swift */; };
 		DE5E5AFD1FA6473B00AD91BF /* AddItemDataSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */; };
 		DE5E5AFF1FA6475900AD91BF /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */; };
+		DE5E5B011FA664A500AD91BF /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5B001FA664A500AD91BF /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DE5E5AFA1FA6471200AD91BF /* StashListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashListViewController.swift; sourceTree = "<group>"; };
 		DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDataSetViewController.swift; sourceTree = "<group>"; };
 		DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		DE5E5B001FA664A500AD91BF /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				DE5E5AC31FA5099600AD91BF /* AppDelegate.swift */,
 				DE5E5AC51FA5099600AD91BF /* ViewController.swift */,
 				DE5E5AC71FA5099600AD91BF /* Main.storyboard */,
+				DE5E5B001FA664A500AD91BF /* Items.swift */,
 				DE5E5ACD1FA5099600AD91BF /* Assets.xcassets */,
 				DE5E5ACF1FA5099600AD91BF /* LaunchScreen.storyboard */,
 				DE5E5AD21FA5099600AD91BF /* Info.plist */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5E5B011FA664A500AD91BF /* Items.swift in Sources */,
 				DE5E5ACC1FA5099600AD91BF /* StashCollector.xcdatamodeld in Sources */,
 				DE5E5AFF1FA6475900AD91BF /* EditItemViewController.swift in Sources */,
 				DE5E5AFB1FA6471200AD91BF /* StashListViewController.swift in Sources */,
