@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="-71.200000000000003" y="258.62068965517244"/>
         </scene>
-        <!--View Controller-->
+        <!--Stash List View Controller-->
         <scene sceneID="Kw5-io-0Eb">
             <objects>
-                <viewController id="1Ye-C7-EEY" sceneMemberID="viewController">
+                <viewController id="1Ye-C7-EEY" customClass="StashListViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eQa-qL-NqK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="559.97001499250382"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Item View Controller-->
         <scene sceneID="h8t-yR-SYp">
             <objects>
-                <viewController id="jTL-K9-bf7" sceneMemberID="viewController">
+                <viewController id="jTL-K9-bf7" customClass="EditItemViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M85-bc-UAT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,12 +81,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8P2-2h-cer" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1616.8" y="589.65517241379314"/>
+            <point key="canvasLocation" x="1617" y="560"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Item Picker View Controller-->
         <scene sceneID="ole-fg-apT">
             <objects>
-                <viewController id="RdC-Ot-gVV" sceneMemberID="viewController">
+                <viewController id="RdC-Ot-gVV" customClass="AddItemPickerViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vqe-ua-AHT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="-120.08995502248877"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Item Data Set View Controller-->
         <scene sceneID="2EK-K4-BhB">
             <objects>
-                <viewController id="f0q-BK-I3d" sceneMemberID="viewController">
+                <viewController id="f0q-BK-I3d" customClass="AddItemDataSetViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V58-8V-qJ1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

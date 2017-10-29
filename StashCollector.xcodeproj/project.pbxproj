@@ -15,6 +15,10 @@
 		DE5E5AD11FA5099600AD91BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5E5ACF1FA5099600AD91BF /* LaunchScreen.storyboard */; };
 		DE5E5ADC1FA5099600AD91BF /* StashCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5ADB1FA5099600AD91BF /* StashCollectorTests.swift */; };
 		DE5E5AE71FA5099600AD91BF /* StashCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AE61FA5099600AD91BF /* StashCollectorUITests.swift */; };
+		DE5E5AF91FA646FC00AD91BF /* AddItemPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AF81FA646FC00AD91BF /* AddItemPickerViewController.swift */; };
+		DE5E5AFB1FA6471200AD91BF /* StashListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFA1FA6471200AD91BF /* StashListViewController.swift */; };
+		DE5E5AFD1FA6473B00AD91BF /* AddItemDataSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */; };
+		DE5E5AFF1FA6475900AD91BF /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		DE5E5AE21FA5099600AD91BF /* StashCollectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCollectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5E5AE61FA5099600AD91BF /* StashCollectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCollectorUITests.swift; sourceTree = "<group>"; };
 		DE5E5AE81FA5099600AD91BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5E5AF81FA646FC00AD91BF /* AddItemPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemPickerViewController.swift; sourceTree = "<group>"; };
+		DE5E5AFA1FA6471200AD91BF /* StashListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashListViewController.swift; sourceTree = "<group>"; };
+		DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDataSetViewController.swift; sourceTree = "<group>"; };
+		DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				DE5E5ACF1FA5099600AD91BF /* LaunchScreen.storyboard */,
 				DE5E5AD21FA5099600AD91BF /* Info.plist */,
 				DE5E5ACA1FA5099600AD91BF /* StashCollector.xcdatamodeld */,
+				DE5E5AF81FA646FC00AD91BF /* AddItemPickerViewController.swift */,
+				DE5E5AFA1FA6471200AD91BF /* StashListViewController.swift */,
+				DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */,
+				DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */,
 			);
 			path = StashCollector;
 			sourceTree = "<group>";
@@ -263,8 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5E5ACC1FA5099600AD91BF /* StashCollector.xcdatamodeld in Sources */,
+				DE5E5AFF1FA6475900AD91BF /* EditItemViewController.swift in Sources */,
+				DE5E5AFB1FA6471200AD91BF /* StashListViewController.swift in Sources */,
+				DE5E5AFD1FA6473B00AD91BF /* AddItemDataSetViewController.swift in Sources */,
 				DE5E5AC61FA5099600AD91BF /* ViewController.swift in Sources */,
 				DE5E5AC41FA5099600AD91BF /* AppDelegate.swift in Sources */,
+				DE5E5AF91FA646FC00AD91BF /* AddItemPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
