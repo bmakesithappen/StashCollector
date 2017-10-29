@@ -10,7 +10,7 @@ import UIKit
 
 class Items: NSObject {
     
-    //TODOS: 1. what about photos would that be a var ? 2. considering some data types may not be requiered should we set them as options or nil (my guess yes)
+    // TODO: 1. what about photos would that be a var ? 2. considering some data types may not be requiered should we set them as options or nil (my guess yes)
 
     var name: String?
     var purchasePrice: String?
@@ -30,6 +30,8 @@ class Items: NSObject {
 }
 
 // adding in specific item types that subclass from Items see V2 Thoughts
+
+// TODO: 1. how to use these subclasses for DataPicker. 2. How to use them to populate categories for StashListViewController
 
 class Prints: Items {
 
