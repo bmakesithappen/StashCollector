@@ -111,6 +111,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="61M-gC-I7A"/>
                     </view>
+                    <connections>
+                        <outlet property="itemPicker" destination="lVL-re-Jpv" id="aDw-8N-eJc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNb-7X-xwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

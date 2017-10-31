@@ -8,10 +8,30 @@
 
 import UIKit
 
-class AddItemPickerViewController: UIViewController {
+// TODO: Fix https://codewithchris.com/uipickerview-example/ 
 
+class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 2 
+    }
+    
+    
+    @IBOutlet weak var itemPicker: UIPickerView!
+    
+    var pickerData: [String] = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.itemPicker.delegate = self
+        self.itemPicker.dataSource = self
+        
+       pickerData = ["Item1", "Item2" ]
+        
 
         // Do any additional setup after loading the view.
     }
