@@ -20,6 +20,7 @@
 		DE5E5AFD1FA6473B00AD91BF /* AddItemDataSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */; };
 		DE5E5AFF1FA6475900AD91BF /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */; };
 		DE5E5B011FA664A500AD91BF /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5B001FA664A500AD91BF /* Items.swift */; };
+		DE66C6C91FA7EB850023EFDD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE66C6C81FA7EB850023EFDD /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDataSetViewController.swift; sourceTree = "<group>"; };
 		DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
 		DE5E5B001FA664A500AD91BF /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		DE66C6C81FA7EB850023EFDD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				DE5E5AC31FA5099600AD91BF /* AppDelegate.swift */,
 				DE5E5AC51FA5099600AD91BF /* ViewController.swift */,
 				DE5E5AC71FA5099600AD91BF /* Main.storyboard */,
+				DE66C6C81FA7EB850023EFDD /* DataManager.swift */,
 				DE5E5B001FA664A500AD91BF /* Items.swift */,
 				DE5E5ACD1FA5099600AD91BF /* Assets.xcassets */,
 				DE5E5ACF1FA5099600AD91BF /* LaunchScreen.storyboard */,
@@ -284,6 +287,7 @@
 				DE5E5AFD1FA6473B00AD91BF /* AddItemDataSetViewController.swift in Sources */,
 				DE5E5AC61FA5099600AD91BF /* ViewController.swift in Sources */,
 				DE5E5AC41FA5099600AD91BF /* AppDelegate.swift in Sources */,
+				DE66C6C91FA7EB850023EFDD /* DataManager.swift in Sources */,
 				DE5E5AF91FA646FC00AD91BF /* AddItemPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

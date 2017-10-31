@@ -8,47 +8,49 @@
 
 import UIKit
 
+enum Condition {
+    
+    case New
+    
+    case Used
+    
+    case Other
+}
+
+enum Category {
+    
+    case Comic
+    
+    case Prints
+    
+    case Statues
+    
+    case Figures
+    
+    case Vinyl
+}
+
 class Items: NSObject {
     
-    // TODO: 1. what about photos would that be a var ? 2. considering some data types may not be requiered should we set them as options or nil (my guess yes)
-
+    // TODO: fix values for Condition enum (better descriptive cases *near mint etc.
+    
     var name: String?
-    var purchasePrice: String?
-    var location: String?
+    var purchasePrice: Float?
+    var location: String?  // Do we want to have a set location option (home vs storage vs etc)
     var url: String?
-    var condition: String? // may want to change this to a drop down or a picker value (3 options new, used, etc)
+    var condition: Condition?
+    var type:Category?
   
-    init(name: String? = nil, purchasePrice: String? = nil, location: String? = nil, url: String? = nil, condition:String? = nil) {
+    init(name: String? = nil, purchasePrice: Float? = nil, location: String? = nil, url: String? = nil, condition:Condition? = nil, type:Category?) {
         self.name = name
         self.purchasePrice = purchasePrice
         self.location = location
         self.url = url
         self.condition = condition
+        self.type = type
         super.init()
         }
 
 }
 
-// adding in specific item types that subclass from Items see V2 Thoughts
 
-// TODO: 1. how to use these subclasses for DataPicker. 2. How to use them to populate categories for StashListViewController
-
-class Prints: Items {
-
-}
-
-class Statue: Items {
-    
-}
-
-class Vinyl: Items {
-    
-}
-
-class Comic: Items {
-    
-}
-
-class Figure: Items {
-
-}
