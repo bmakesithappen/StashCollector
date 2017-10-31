@@ -10,6 +10,8 @@ import Foundation
 
 class DataManager {
     
+    // TODO: Add more items to the list below 
+    
     static let sharedInstance = DataManager()
 
     var theList: [Items]
