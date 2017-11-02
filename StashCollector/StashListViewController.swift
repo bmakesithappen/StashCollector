@@ -8,13 +8,15 @@
 
 import UIKit
 
+
+
 class StashListViewController: UIViewController {
+
+    var list = DataManager.sharedInstance.theList
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-     var list = DataManager.sharedInstance.theList
-
+    
         // Do any additional setup after loading the view.
     }
 

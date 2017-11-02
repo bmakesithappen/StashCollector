@@ -11,15 +11,8 @@ import UIKit
 // TODO: Fix https://codewithchris.com/uipickerview-example/ 
 
 class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 2 
-    }
-    
-    
+
+
     @IBOutlet weak var itemPicker: UIPickerView!
     
     var pickerData: [String] = [String]()
@@ -30,7 +23,7 @@ class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIP
         self.itemPicker.delegate = self
         self.itemPicker.dataSource = self
         
-       pickerData = ["Item1", "Item2" ]
+        pickerData = ["Item1", "Item2", "Item3"] 
         
 
         // Do any additional setup after loading the view.
@@ -41,7 +34,17 @@ class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIP
         // Dispose of any resources that can be recreated.
     }
     
-
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
     /*
     // MARK: - Navigation
 
