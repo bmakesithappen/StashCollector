@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-
+import Foundation
 
 enum Condition {
     
@@ -19,60 +18,98 @@ enum Condition {
     case Other
 }
 
-enum Category: Int  {
+public protocol EnumCollection: Hashable {
     
-    case Comic = 0
+    static func cases() -> AnySequence<Self>
     
-    case Prints = 1
+    static var allValues: [Self] { get }
     
-    case Statues = 2
+}
+
+public extension EnumCollection {
     
-    case Figures = 3
-    
-    case Vinyl = 4
-    
-    static var count: Int { return Category.Vinyl.hashValue + 1 }
-    
-    var description: String {
-        switch self {
-        case .Comic   : return "Comic"
-        case .Prints  : return "Prints"
-        case .Statues : return "Statue"
-        case .Figures : return "Figures"
-        case .Vinyl   : return  "Vinyl"
+    public static func cases() -> AnySequence<Self> {
+        
+        return AnySequence { () -> AnyIterator<Self> in
+            
+            var raw = 0
+            
+            return AnyIterator {
+                
+                let current: Self = withUnsafePointer(to: &raw) { $0.withMemoryRebound(to: self, capacity: 1) { $0.pointee } }
+                
+                guard current.hashValue == raw else {
+                    
+                    return nil
+                }
+                
+                raw += 1
+                
+                return current
+            }
             
         }
         
     }
-    // TODO: Reimimplination to only write "Comics" once.  Enum = Array
     
-    static var list: [String] {
-        return ["Comics", "Prints", "Statues", "Figures", "Vinyl"]
-        }
+    public static var allValues: [Self] {
+        
+        return Array(self.cases())
+        
+    }
+    
 }
 
+enum Category: String, EnumCollection {
     
-    class Items: NSObject {
+    case Comic
+    
+    case Prints
+    
+    case Statues
+    
+    case Figures
+    
+    case Vinyl
+    
+    case Test
+    
+    
+    static var list: [String] {
         
-        // TODO: fix values for Condition enum (better descriptive cases *near mint etc.
+        return self.allValues.map({(val) in
+            
+            return val.rawValue
+            
+        })
         
-        var name: String?
-        var purchasePrice: Float?
-        var location: String?  // Do we want to have a set location option (home vs storage vs etc)
-        var url: String?
-        var condition: Condition?
-        var type:Category?
-        
-        init(name: String? = nil, purchasePrice: Float? = nil, location: String? = nil, url: String? = nil, condition:Condition? = nil, type:Category?) {
-            self.name = name
-            self.purchasePrice = purchasePrice
-            self.location = location
-            self.url = url
-            self.condition = condition
-            self.type = type
-            super.init()
-        }
-        
+    }
+    
+}
+
+
+
+class Items: NSObject {
+    
+    // TODO: fix values for Condition enum (better descriptive cases *near mint etc.
+    
+    var name: String?
+    var purchasePrice: Float?
+    var location: String?  // Do we want to have a set location option (home vs storage vs etc)
+    var url: String?
+    var condition: Condition?
+    var type:Category?
+    
+    init(name: String? = nil, purchasePrice: Float? = nil, location: String? = nil, url: String? = nil, condition:Condition? = nil, type:Category?) {
+        self.name = name
+        self.purchasePrice = purchasePrice
+        self.location = location
+        self.url = url
+        self.condition = condition
+        self.type = type
+        super.init()
+    }
+    
 }
 
 
