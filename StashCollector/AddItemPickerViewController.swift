@@ -8,14 +8,16 @@
 
 import UIKit
 
-// TODO: Fix https://codewithchris.com/uipickerview-example/ 
+// TODO: Fix https://codewithchris.com/uipickerview-example/   https://stackoverflow.com/questions/30025481/take-data-from-enum-to-show-on-uipickerview-swift
+
+
 
 class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
 
     @IBOutlet weak var itemPicker: UIPickerView!
     
-    var pickerData: [String] = [String]()
+    var pickerData = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +25,7 @@ class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIP
         self.itemPicker.delegate = self
         self.itemPicker.dataSource = self
         
-        pickerData = ["Item1", "Item2", "Item3"] 
-        
+        pickerData = Category.list
 
         // Do any additional setup after loading the view.
     }

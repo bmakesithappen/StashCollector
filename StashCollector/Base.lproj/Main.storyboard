@@ -41,7 +41,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1Ye-C7-EEY" kind="show" identifier="openStashList" id="PpT-wI-9F6"/>
+                                    <segue destination="AZj-sY-Rzb" kind="show" id="IoU-Mg-0H7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,20 +55,33 @@
             </objects>
             <point key="canvasLocation" x="-71.200000000000003" y="258.62068965517244"/>
         </scene>
-        <!--Stash List View Controller-->
-        <scene sceneID="Kw5-io-0Eb">
+        <!--Stash List Table View Controller-->
+        <scene sceneID="ohF-Gj-Qr8">
             <objects>
-                <viewController id="1Ye-C7-EEY" customClass="StashListViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eQa-qL-NqK">
+                <tableViewController id="AZj-sY-Rzb" customClass="StashListTableViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pyU-Nu-lLc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="xOM-fE-cb2"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AJZ-uO-Kbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zN0-Wn-826">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zN0-Wn-826" id="oAq-DE-Ydj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AZj-sY-Rzb" id="A0n-2K-13p"/>
+                            <outlet property="delegate" destination="AZj-sY-Rzb" id="Gf5-z2-t3O"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6S-fb-cVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.79999999999995" y="559.97001499250382"/>
+            <point key="canvasLocation" x="783" y="555"/>
         </scene>
         <!--Edit Item View Controller-->
         <scene sceneID="h8t-yR-SYp">
