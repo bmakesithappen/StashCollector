@@ -72,9 +72,6 @@ enum Category: String, EnumCollection {
     
     case Vinyl
     
-    case Test
-    
-    
     static var list: [String] {
         
         return self.allValues.map({(val) in
