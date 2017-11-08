@@ -8,9 +8,6 @@
 
 import UIKit
 
-// TODO: Fix https://codewithchris.com/uipickerview-example/   https://stackoverflow.com/questions/30025481/take-data-from-enum-to-show-on-uipickerview-swift
-
-
 
 class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
