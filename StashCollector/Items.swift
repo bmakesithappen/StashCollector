@@ -9,13 +9,17 @@
 import UIKit
 import Foundation
 
-enum Condition {
+// TODO: Set location option (home vs storage vs etc) Fix values for Condition enum (better descriptive cases *near mint etc.
+// TODO: For each of the above set public protocol can each of the enums inherit from the ENUMCollection ?  
+
+
+enum Condition:String, {
     
-    case New
+    case New = "New"
     
-    case Used
+    case Used = "Used"
     
-    case Other
+    case Other = "Other"
 }
 
 public protocol EnumCollection: Hashable {
@@ -88,11 +92,9 @@ enum Category: String, EnumCollection {
 
 class Items: NSObject {
     
-    // TODO: fix values for Condition enum (better descriptive cases *near mint etc.
-    
     var name: String?
     var purchasePrice: Float?
-    var location: String?  // Do we want to have a set location option (home vs storage vs etc)
+    var location: String?
     var url: String?
     var condition: Condition?
     var type:Category?

@@ -10,6 +10,8 @@ import UIKit
 
 class StashListTableViewController: UITableViewController {
     
+    // TODO: Fix Subtitle in cell to show: Price, condition, category.  Fix spacing of those data points
+    
     let theList = DataManager.sharedInstance.theList
     
     override func viewDidLoad() {
@@ -40,16 +42,35 @@ class StashListTableViewController: UITableViewController {
     }
     
     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-     
-        cell.textLabel?.text = theList[indexPath.row].name ?? "no name"
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-     // Configure the cell...
-     
-     return cell
-     }
- 
+        let item = theList[indexPath.row]
+        
+        let condition = item.condition?.rawValue
+        
+      //  let price = String(item.purchasePrice?)
+        
+        cell.textLabel?.text = item.name ?? "no name"
+        
+        cell.detailTextLabel?.text =
+           ( item.url ?? " " )
+            + (item.location ?? " " )
+          + (condition ?? "")
+        
+        return cell
+        
+        /*
+         var name: String?
+         var purchasePrice: Float?
+         var location: String?  // Do we want to have a set location option (home vs storage vs etc)
+         var url: String?
+         var condition: Condition?
+         var type:Category?
+         
+         */
+    }
+    
     
     /*
      // Override to support conditional editing of the table view.

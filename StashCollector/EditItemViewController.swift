@@ -9,6 +9,10 @@
 import UIKit
 
 class EditItemViewController: UIViewController {
+    
+    // TODO: Have value save from DataPicker and display in this viewController.  Add UITextFields for each: name, purchase price, url (category is set from UIPicker)
+    // TODO: Find drop down UIKIT for location and condition
+    // TODO: Save Button
 
     override func viewDidLoad() {
         super.viewDidLoad()
