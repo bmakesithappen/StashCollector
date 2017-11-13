@@ -1,5 +1,5 @@
 //
-//  EditItemViewController.swift
+//  AddItemDataSetViewController.swift
 //  StashCollector
 //
 //  Created by Bernard Désert on 10/29/17.
@@ -8,12 +8,17 @@
 
 import UIKit
 
-class EditItemViewController: UIViewController {
+class DetailItemViewController: UIViewController {
     
     // TODO: Have value save from DataPicker and display in this viewController.  Add UITextFields for each: name, purchase price, url (category is set from UIPicker)
     // TODO: Find drop down UIKIT for location and condition
     // TODO: Save Button
-
+    
+    // TODO: Have value save from DataPicker and display in this viewController.  Add UITextFields for each: name, purchase price, url (category is set from UIPicker)
+    // TODO: Find drop down UIKIT for location and condition
+    // TODO: Save Button
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

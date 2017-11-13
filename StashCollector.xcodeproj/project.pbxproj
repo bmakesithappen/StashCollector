@@ -16,8 +16,7 @@
 		DE5E5ADC1FA5099600AD91BF /* StashCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5ADB1FA5099600AD91BF /* StashCollectorTests.swift */; };
 		DE5E5AE71FA5099600AD91BF /* StashCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AE61FA5099600AD91BF /* StashCollectorUITests.swift */; };
 		DE5E5AF91FA646FC00AD91BF /* AddItemPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AF81FA646FC00AD91BF /* AddItemPickerViewController.swift */; };
-		DE5E5AFD1FA6473B00AD91BF /* AddItemDataSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */; };
-		DE5E5AFF1FA6475900AD91BF /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */; };
+		DE5E5AFD1FA6473B00AD91BF /* DetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5AFC1FA6473B00AD91BF /* DetailItemViewController.swift */; };
 		DE5E5B011FA664A500AD91BF /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E5B001FA664A500AD91BF /* Items.swift */; };
 		DE60FEB81FAD063900CDA036 /* StashListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60FEB71FAD063900CDA036 /* StashListTableViewController.swift */; };
 		DE66C6C91FA7EB850023EFDD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE66C6C81FA7EB850023EFDD /* DataManager.swift */; };
@@ -56,8 +55,7 @@
 		DE5E5AE61FA5099600AD91BF /* StashCollectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCollectorUITests.swift; sourceTree = "<group>"; };
 		DE5E5AE81FA5099600AD91BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5E5AF81FA646FC00AD91BF /* AddItemPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemPickerViewController.swift; sourceTree = "<group>"; };
-		DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDataSetViewController.swift; sourceTree = "<group>"; };
-		DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		DE5E5AFC1FA6473B00AD91BF /* DetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemViewController.swift; sourceTree = "<group>"; };
 		DE5E5B001FA664A500AD91BF /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		DE60FEB71FAD063900CDA036 /* StashListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashListTableViewController.swift; sourceTree = "<group>"; };
 		DE66C6C81FA7EB850023EFDD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -122,8 +120,7 @@
 				DE5E5ACA1FA5099600AD91BF /* StashCollector.xcdatamodeld */,
 				DE60FEB71FAD063900CDA036 /* StashListTableViewController.swift */,
 				DE5E5AF81FA646FC00AD91BF /* AddItemPickerViewController.swift */,
-				DE5E5AFC1FA6473B00AD91BF /* AddItemDataSetViewController.swift */,
-				DE5E5AFE1FA6475900AD91BF /* EditItemViewController.swift */,
+				DE5E5AFC1FA6473B00AD91BF /* DetailItemViewController.swift */,
 			);
 			path = StashCollector;
 			sourceTree = "<group>";
@@ -282,8 +279,7 @@
 			files = (
 				DE5E5B011FA664A500AD91BF /* Items.swift in Sources */,
 				DE5E5ACC1FA5099600AD91BF /* StashCollector.xcdatamodeld in Sources */,
-				DE5E5AFF1FA6475900AD91BF /* EditItemViewController.swift in Sources */,
-				DE5E5AFD1FA6473B00AD91BF /* AddItemDataSetViewController.swift in Sources */,
+				DE5E5AFD1FA6473B00AD91BF /* DetailItemViewController.swift in Sources */,
 				DE5E5AC61FA5099600AD91BF /* ViewController.swift in Sources */,
 				DE5E5AC41FA5099600AD91BF /* AppDelegate.swift in Sources */,
 				DE66C6C91FA7EB850023EFDD /* DataManager.swift in Sources */,

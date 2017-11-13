@@ -87,6 +87,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="f0q-BK-I3d" kind="show" id="v8o-BP-2VG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -99,21 +102,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6S-fb-cVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="783" y="555"/>
-        </scene>
-        <!--Edit Item View Controller-->
-        <scene sceneID="h8t-yR-SYp">
-            <objects>
-                <viewController id="jTL-K9-bf7" customClass="EditItemViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="M85-bc-UAT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="gcg-OL-QeM"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8P2-2h-cer" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1617" y="560"/>
         </scene>
         <!--Add Item Picker View Controller-->
         <scene sceneID="ole-fg-apT">
@@ -149,13 +137,36 @@
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="-120.08995502248877"/>
         </scene>
-        <!--Add Item Data Set View Controller-->
+        <!--Detail Item View Controller-->
         <scene sceneID="2EK-K4-BhB">
             <objects>
-                <viewController id="f0q-BK-I3d" customClass="AddItemDataSetViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f0q-BK-I3d" customClass="DetailItemViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V58-8V-qJ1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-95-qmS">
+                                <rect key="frame" x="139" y="168" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price $$$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UiF-EX-N1s">
+                                <rect key="frame" x="139" y="247" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL Field " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NiZ-tN-sgb">
+                                <rect key="frame" x="139" y="338" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="r1B-qf-GqQ"/>
                     </view>
@@ -183,4 +194,7 @@
             <point key="canvasLocation" x="-411.19999999999999" y="258.17091454272867"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="v8o-BP-2VG"/>
+    </inferredMetricsTieBreakers>
 </document>
