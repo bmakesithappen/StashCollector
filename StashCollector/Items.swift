@@ -10,16 +10,26 @@ import UIKit
 import Foundation
 
 // TODO: Set location option (home vs storage vs etc) Fix values for Condition enum (better descriptive cases *near mint etc.
-// TODO: For each of the above set public protocol can each of the enums inherit from the ENUMCollection ?  
 
 
-enum Condition:String, {
+enum Condition:String, EnumCollection {
     
-    case New = "New"
+    case New
     
-    case Used = "Used"
+    case Used
     
-    case Other = "Other"
+    case Other
+        
+    public static var list: [String] {
+        
+        return self.allValues.map({(val) in
+            
+            return String(val.rawValue)
+            
+        })
+        
+    }
+
 }
 
 public protocol EnumCollection: Hashable {
