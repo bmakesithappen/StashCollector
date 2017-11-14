@@ -9,28 +9,6 @@
 import UIKit
 import Foundation
 
-// TODO: Set location option (home vs storage vs etc) Fix values for Condition enum (better descriptive cases *near mint etc.
-
-
-enum Condition:String, EnumCollection {
-    
-    case New
-    
-    case Used
-    
-    case Other
-        
-    public static var list: [String] {
-        
-        return self.allValues.map({(val) in
-            
-            return String(val.rawValue)
-            
-        })
-        
-    }
-
-}
 
 public protocol EnumCollection: Hashable {
     
@@ -74,6 +52,26 @@ public extension EnumCollection {
     
 }
 
+enum Condition:String, EnumCollection {
+    
+    case Mint
+    
+    case Used
+    
+    case SlightlyDamaged
+    
+    public static var list: [String] {
+        
+        return self.allValues.map({(val) in
+            
+            return String(val.rawValue)
+            
+        })
+        
+    }
+
+}
+
 enum Category: String, EnumCollection {
     
     case Comic
@@ -98,18 +96,37 @@ enum Category: String, EnumCollection {
     
 }
 
+enum Location: String, EnumCollection {
+    
+    case Home
+    
+    case Storage
+    
+    case OnDisplay
+    
+    static var list: [String] {
+        
+        return self.allValues.map({(val) in
+            
+            return val.rawValue
+            
+        })
+        
+    }
+}
+
 
 
 class Items: NSObject {
     
     var name: String?
     var purchasePrice: Float?
-    var location: String?
+    var location: Location?
     var url: String?
     var condition: Condition?
     var type:Category?
     
-    init(name: String? = nil, purchasePrice: Float? = nil, location: String? = nil, url: String? = nil, condition:Condition? = nil, type:Category?) {
+    init(name: String? = nil, purchasePrice: Float? = nil, location:Location? , url: String? = nil, condition:Condition? = nil, type:Category?) {
         self.name = name
         self.purchasePrice = purchasePrice
         self.location = location

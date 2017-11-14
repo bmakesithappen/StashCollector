@@ -47,20 +47,23 @@ class StashListTableViewController: UITableViewController {
         
         let item = theList[indexPath.row]
         
-        let condition = item.condition?.rawValue
-        
       //  let price = String(item.purchasePrice?)
         
         cell.textLabel?.text = item.name ?? "no name"
         
-        cell.detailTextLabel?.text =
-           ( item.url ?? " " )
-            + (item.location ?? " " )
-          + (condition ?? "")
-        
         return cell
         
         /*
+         TO DISPLAY PROPERTIES FOR A ITEM:
+         
+         let condition = item.condition?.rawValue
+
+         cell.detailTextLabel?.text =
+         ( item.url ?? " " )
+         + (item.location ?? " " )
+         + (condition ?? "")
+         
+         
          var name: String?
          var purchasePrice: Float?
          var location: String?  // Do we want to have a set location option (home vs storage vs etc)
