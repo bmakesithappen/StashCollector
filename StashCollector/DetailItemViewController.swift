@@ -10,8 +10,9 @@ import UIKit
 
 class DetailItemViewController: UIViewController {
     
-    // TODO: Have value save from DataPicker and display in this viewController.  Add UITextFields for each: name, purchase price, url (category is set from UIPicker)
-    // TODO: Save Button
+    // TODO: Have value save from DataPicker and display in this viewController.  
+    // TODO: Save Button connects to what action / page ??
+    // TODO: Enums Populate Data for UIPickers
     
     
     override func viewDidLoad() {

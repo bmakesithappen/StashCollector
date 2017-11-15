@@ -33,14 +33,28 @@ public extension EnumCollection {
                 guard current.hashValue == raw else {
                     
                     return nil
+                    
                 }
-                
                 raw += 1
                 
                 return current
+                
             }
             
         }
+        
+    }
+    
+    
+    public var caseName: String {
+        
+        return "\(self)"
+        
+    }
+    
+    public static var list: [String] {
+        
+        return Array(self.cases()).map( { $0.caseName })
         
     }
     
@@ -60,16 +74,6 @@ enum Condition:String, EnumCollection {
     
     case SlightlyDamaged
     
-    public static var list: [String] {
-        
-        return self.allValues.map({(val) in
-            
-            return String(val.rawValue)
-            
-        })
-        
-    }
-
 }
 
 enum Category: String, EnumCollection {
@@ -84,16 +88,6 @@ enum Category: String, EnumCollection {
     
     case Vinyl
     
-    static var list: [String] {
-        
-        return self.allValues.map({(val) in
-            
-            return val.rawValue
-            
-        })
-        
-    }
-    
 }
 
 enum Location: String, EnumCollection {
@@ -104,17 +98,7 @@ enum Location: String, EnumCollection {
     
     case OnDisplay
     
-    static var list: [String] {
-        
-        return self.allValues.map({(val) in
-            
-            return val.rawValue
-            
-        })
-        
-    }
 }
-
 
 
 class Items: NSObject {
