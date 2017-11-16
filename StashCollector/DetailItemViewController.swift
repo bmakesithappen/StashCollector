@@ -12,29 +12,59 @@ class DetailItemViewController: UIViewController {
     
     // TODO: Have value save from DataPicker and display in this viewController.  
     // TODO: Save Button connects to what action / page ??
-    // TODO: Enums Populate Data for UIPickers
     
+    
+    @IBOutlet weak var conditionPicker: UIPickerView!
+    
+    @IBOutlet weak var locationPicker: UIPickerView!
+    
+    let conditionPickerDelegate = PickerDelegate(pickerData: Condition.list)
+    let locationPickerDelegate = PickerDelegate(pickerData: Location.list)
     
     override func viewDidLoad() {
+        self.conditionPicker.delegate = conditionPickerDelegate
+        self.conditionPicker.dataSource = conditionPickerDelegate
+        
+        self.locationPicker.delegate = locationPickerDelegate
+        self.locationPicker.dataSource = locationPickerDelegate
+        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+class PickerDelegate: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    let pickerData: [String]
+    init(pickerData: [String]) {
+        self.pickerData = pickerData
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

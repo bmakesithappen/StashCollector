@@ -118,7 +118,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="f0q-BK-I3d" kind="show" identifier="openDataInput" id="5J9-Zn-KNk"/>
+                                    <segue destination="f0q-BK-I3d" kind="show" identifier="openAddItemPickerView" id="5J9-Zn-KNk"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lVL-re-Jpv">
@@ -185,6 +185,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="r1B-qf-GqQ"/>
                     </view>
+                    <connections>
+                        <outlet property="conditionPicker" destination="8hJ-kX-eQV" id="SRJ-AW-ZaZ"/>
+                        <outlet property="locationPicker" destination="a4t-Vs-zm6" id="6ul-Ke-Avn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvd-eT-eD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
