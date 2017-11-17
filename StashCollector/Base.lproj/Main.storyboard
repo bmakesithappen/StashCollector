@@ -87,9 +87,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="f0q-BK-I3d" kind="show" id="v8o-BP-2VG"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -173,6 +170,9 @@
                                 <state key="normal" title="Save ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AZj-sY-Rzb" kind="show" id="zog-62-M95"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price $$$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UiF-EX-N1s">
                                 <rect key="frame" x="140" y="190" width="97" height="30"/>
@@ -214,6 +214,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5J9-Zn-KNk"/>
+        <segue reference="zog-62-M95"/>
     </inferredMetricsTieBreakers>
 </document>

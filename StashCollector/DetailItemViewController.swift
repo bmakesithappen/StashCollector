@@ -11,7 +11,6 @@ import UIKit
 class DetailItemViewController: UIViewController {
     
     // TODO: Have value save from DataPicker and display in this viewController.  
-    // TODO: Save Button connects to what action / page ??
     
     
     @IBOutlet weak var conditionPicker: UIPickerView!
