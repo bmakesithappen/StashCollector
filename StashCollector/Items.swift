@@ -64,6 +64,16 @@ public extension EnumCollection {
         
     }
     
+    public static func caseName(_ index: Int) -> String? {
+        
+        guard (index >= 0 ) && (index < Self.list.count)
+            
+            else { return nil }
+        
+        return Self.list[index]
+        
+    }
+    
 }
 
 enum Condition:String, EnumCollection {
