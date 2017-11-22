@@ -18,6 +18,10 @@ class DetailItemViewController: UIViewController {
     
     @IBOutlet weak var locationPicker: UIPickerView!
     
+    @IBOutlet weak var categoryLabel: UILabel!
+    
+    var category: Category?
+    
     let conditionPickerDelegate = PickerDelegate(pickerData: Condition.list)
     let locationPickerDelegate = PickerDelegate(pickerData: Location.list)
     
@@ -29,6 +33,8 @@ class DetailItemViewController: UIViewController {
         self.locationPicker.dataSource = locationPickerDelegate
         
         super.viewDidLoad()
+        
+        categoryLabel.text = category?.caseName
 
     }
 

@@ -13,6 +13,8 @@ class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIP
     
     @IBOutlet weak var itemPicker: UIPickerView!
     
+    var category: Category?
+    
     var pickerData = [String]()
     
     override func viewDidLoad() {
@@ -43,6 +45,10 @@ class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIP
         return pickerData[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        category = Category(rawValue: pickerData[row])
+    }
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -50,7 +56,19 @@ class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIP
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "openAddItemPickerView" {
-            print(self.itemPicker.selectedRow(inComponent: 0))
+            category = Category(rawValue: pickerData[self.itemPicker.selectedRow(inComponent: 0)])
+            let destination = segue.destination as! DetailItemViewController
+            destination.category = category 
+            
+            /*
+ 
+ let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell)!
+ let contact = self.contacts[indexPath.row]
+ let destination = segue.destination as! DetailsViewController
+ destination.contact = contact
+ 
+ */
+            
         }
     }
     // Get the new view controller using segue.destinationViewController.
