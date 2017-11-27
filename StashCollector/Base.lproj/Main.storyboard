@@ -24,16 +24,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfO-6p-0zE">
-                                <rect key="frame" x="124" y="270" width="126" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Item">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RdC-Ot-gVV" kind="show" identifier="openAddItem" id="yTm-aF-pJr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-1D-aeL">
                                 <rect key="frame" x="124" y="355" width="131" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,7 +45,7 @@
             </objects>
             <point key="canvasLocation" x="-71.200000000000003" y="258.62068965517244"/>
         </scene>
-        <!--Stash List Table View Controller-->
+        <!--Stash List -->
         <scene sceneID="ohF-Gj-Qr8">
             <objects>
                 <tableViewController id="AZj-sY-Rzb" customClass="StashListTableViewController" customModule="StashCollector" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,6 +85,15 @@
                             <outlet property="delegate" destination="AZj-sY-Rzb" id="Gf5-z2-t3O"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Stash List " id="Fb0-3C-Umu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vvq-wN-pj3">
+                            <connections>
+                                <segue destination="RdC-Ot-gVV" kind="show" id="UOe-pd-S9i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6S-fb-cVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,6 +222,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zog-62-M95"/>
+        <segue reference="IoU-Mg-0H7"/>
     </inferredMetricsTieBreakers>
 </document>
