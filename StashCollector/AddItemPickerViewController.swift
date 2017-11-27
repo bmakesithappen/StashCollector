@@ -60,15 +60,6 @@ class AddItemPickerViewController: UIViewController, UIPickerViewDataSource, UIP
             let destination = segue.destination as! DetailItemViewController
             destination.category = category 
             
-            /*
- 
- let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell)!
- let contact = self.contacts[indexPath.row]
- let destination = segue.destination as! DetailsViewController
- destination.contact = contact
- 
- */
-            
         }
     }
     // Get the new view controller using segue.destinationViewController.

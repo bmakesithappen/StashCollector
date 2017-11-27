@@ -120,7 +120,7 @@ class Items: NSObject {
     var condition: Condition?
     var type:Category?
     
-    init(name: String? = nil, purchasePrice: Float? = nil, location:Location? , url: String? = nil, condition:Condition? = nil, type:Category?) {
+    init(name: String? = nil, purchasePrice: Float? = nil, location:Location? = nil, url: String? = nil, condition:Condition? = nil, type:Category?) {
         self.name = name
         self.purchasePrice = purchasePrice
         self.location = location

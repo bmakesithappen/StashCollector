@@ -12,10 +12,14 @@ class StashListTableViewController: UITableViewController {
     
     // TODO: Fix Subtitle in cell to show: Price, condition, category.  Fix spacing of those data points
     
-    let theList = DataManager.sharedInstance.theList
+    var theList:[Items]?
+    
+    //    DataManager.sharedInstance.theList.append(items)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        theList = DataManager.sharedInstance.theList
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -38,14 +42,14 @@ class StashListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return theList.count
+        return theList!.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let item = theList[indexPath.row]
+        let item = theList![indexPath.row]
         
       //  let price = String(item.purchasePrice?)
         
