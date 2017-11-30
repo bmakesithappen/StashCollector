@@ -10,8 +10,6 @@ import UIKit
 
 class StashListTableViewController: UITableViewController {
     
-    // TODO: Fix Subtitle in cell to show: Price, condition, category.  Fix spacing of those data points
-    
     var theList:[Items]?
     
     //    DataManager.sharedInstance.theList.append(items)

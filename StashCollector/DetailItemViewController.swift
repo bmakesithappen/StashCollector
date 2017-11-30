@@ -10,10 +10,6 @@ import UIKit
 
 class DetailItemViewController: UIViewController {
     
-    // TODO: Have value save from DataPicker and display in this viewController.
-    // TODO: When "save" is tapped we want to show the StashListViewController and that specific item added "When I save it I want to see it in the big list"
-    
-    
     @IBOutlet weak var conditionPicker: UIPickerView!
     
     @IBOutlet weak var locationPicker: UIPickerView!
